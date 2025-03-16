@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Add Category - My To-Do List{% endblock %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Category</button>
+</form>
+<a href="{% url 'category_list' %}">Back to Categories</a>
+{% endblock %}
