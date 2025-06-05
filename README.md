@@ -1,95 +1,126 @@
-Task List - Django Web App
+# 📝 Task List - Django Web App
 
-Overview
+## 📌 Overview
 
-This is a simple task management web application built using Django. Users can create, update, search, and delete tasks. The app also includes user authentication (login/logout) and task categorization.
+This is a simple task management web application built using **Django**. Users can create, update, search, and delete tasks. The app also includes **user authentication** and **task categorization**.
 
-Features
+---
 
-User Authentication: Sign up, log in, and log out.
+## 🚀 Features
 
-Task Management: Add, view, search, and delete tasks.
+* **User Authentication**: Sign up, log in, and log out
+* **Task Management**: Add, view, search, and delete tasks
+* **Categories**: Organize tasks by category
+* **Search Functionality**: Find tasks by title
 
-Categories: Organize tasks by category.
+---
 
-Search Functionality: Find tasks by title.
+## ⚙️ Installation
 
-Installation
+### ✅ Prerequisites
 
-Prerequisites
+Make sure the following are installed:
 
-Ensure you have the following installed:
+* Python (≥ 3.8)
+* Django (latest stable version)
+* Git
 
-Python (>=3.8)
+### 🛠️ Steps to Run the Project
 
-Django (latest stable version)
+1. **Clone the repository**
 
-Git (for version control)
+   ```bash
+   git clone https://github.com/yourusername/todolist.git
+   cd todolist
+   ```
 
-Steps to Run the Project
+2. **Create and activate a virtual environment**
 
-Clone the repository:git clone https://github.com/yourusername/todolist.git
-cd todolist
+   * **macOS/Linux**:
 
-Create a virtual environment and activate it:
-python -m venv myenv
+     ```bash
+     python -m venv myenv
+     source myenv/bin/activate
+     ```
+   * **Windows**:
 
-source myenv/bin/activate  # macOS/Linux
-myenv\Scripts\activate  # Windo
+     ```cmd
+     python -m venv myenv
+     myenv\Scripts\activate
+     ```
 
-Install dependencies:
-pip install -r requirements.txt
+3. **Install dependencies**
 
-Apply migrations:
-python manage.py migrate
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Run the development server:
-python manage.py runserver
+4. **Apply migrations**
 
-Open http://127.0.0.1:8000/ in your browser.
+   ```bash
+   python manage.py migrate
+   ```
 
-Project Structure
-todolist/                     # Root project directory
-│── manage.py                 # Django management script
-│── db.sqlite3                # SQLite database (if using SQLite)
-│── myenv/                     # Virtual environment (optional)
+5. **Run the development server**
+
+   ```bash
+   python manage.py runserver
+   ```
+
+6. Open your browser and go to:
+   [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+---
+
+## 🗂️ Project Structure
+
+```
+todolist/
 │
-├── todolist/                 # Main project directory
-│   │── __init__.py           
-│   │── settings.py           # Django settings
-│   │── urls.py               # Project-level URL configuration
-│   │── asgi.py
-│   │── wsgi.py
+├── manage.py
+├── db.sqlite3
+├── myenv/                     # Virtual environment (optional)
 │
-├── todo/                     # Application directory
-│   │── migrations/           # Database migrations
-│   │── __init__.py
-│   │── admin.py              # Django admin configurations
-│   │── apps.py
-│   │── models.py             # Database models
-│   │── tests.py
-│   │── views.py              # Views (business logic)
-│   │── urls.py               # URL patterns for the app
+├── todolist/                  # Django project settings
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
 │
-├── templates/                # HTML templates
-│   │── base.html             # Base template
-│   │── login.html            # Login page
-│   │── signup.html           # Signup page
-│   │── task_list.html        # Task list page
-│   │── logout.html        # Logout confirmation page
+├── todo/                      # Main app
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── views.py
+│   ├── urls.py
+│   └── migrations/
 │
-└── README.md                 # Project documentation
+├── templates/                 # HTML Templates
+│   ├── base.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── task_list.html
+│   └── logout.html
+│
+└── README.md
+```
 
-Usage
+---
 
-Login with your credentials.
+## 💡 Usage
 
-Add a task by filling out the form.
+1. Log in with your credentials
+2. Add tasks using the task form
+3. Delete tasks with the delete button
+4. Search tasks using the search bar
 
-Delete a task using the delete button.
+---
 
-Search for tasks using the search bar.
+## 📄 License
 
-License
+This project is licensed under the [MIT License](LICENSE).
 
-This project is licensed under the MIT License.
+
